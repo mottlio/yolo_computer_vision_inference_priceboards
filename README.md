@@ -65,3 +65,20 @@ Link to my [Google Colab notebook](https://colab.research.google.com/drive/1cnko
 
 - we need a trained model - output of training a YOLO model (best.pt). 
 - folder with test frames from new videos (not used for training)
+
+### Create a new virtual environment (I use uv)
+
+```bash
+uv venv .venv-yolo --python 3.11
+source .venv-yolo/bin/activate
+```
+### Install dependencies
+
+```bash
+uv pip install "numpy<2" ultralytics
+```
+### Test it
+
+```bash
+python -c "from ultralytics import YOLO; print('YOLO ready')"
+```
