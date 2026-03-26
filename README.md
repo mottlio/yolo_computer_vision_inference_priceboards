@@ -75,6 +75,7 @@ source .venv-yolo/bin/activate
 ### Install dependencies
 
 ```bash
+uv init #creates pyproject.toml
 uv pip install "numpy<2" ultralytics
 ```
 ### Test it
